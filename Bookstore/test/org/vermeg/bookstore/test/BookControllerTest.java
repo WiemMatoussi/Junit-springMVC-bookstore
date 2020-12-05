@@ -85,7 +85,7 @@ class BookControllerTest {
 
 	@Test
 	void testUpdateBook() {
-		Book book=new Book(10, "title1", "author1", null, 10);
+		Book book=new Book(10, "title11", "author1", null, 10);
 		bookService.updateBook(book);
 		verify(bookService, times(1)).updateBook(book);
 		
